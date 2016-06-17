@@ -20,9 +20,9 @@ public class TestHomeUserApplication {
 	@Test
 	public void testHomeUserApplicationFunctionality() throws Exception {
 		String query = "ipod";
-		HashMap<String, Double> unsortedReviewMap = new HashMap();
-		HashMap<String, Double> sortedReviewMap = new HashMap();
-		HashMap<String, Double> expectedMap = new HashMap();
+		HashMap<String, Double> unsortedReviewMap = new HashMap<String, Double>();
+		HashMap<String, Double> sortedReviewMap = new HashMap<String, Double>();
+		HashMap<String, Double> expectedMap = new HashMap<String, Double>();
 		expectedMap.put("25857866", 5.0);
 		expectedMap.put("30146246", 4.78);
 		expectedMap.put("31232984", 4.55);

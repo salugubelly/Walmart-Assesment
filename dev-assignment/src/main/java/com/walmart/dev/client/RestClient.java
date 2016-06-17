@@ -7,11 +7,11 @@ import com.sun.jersey.api.client.WebResource;
 
 /**
  * @author Sinduja Alugubelly
- * This class establishes Http Connection to 
+ * This class establishes connection to 
  * Walmart.com Open API 
  * using Jersey Client
  */
-public class HttpClient {
+public class RestClient {
 	
 	public static String get(String url) {
 

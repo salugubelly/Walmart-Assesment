@@ -30,8 +30,8 @@ public class UserRecommendationsMain {
 			HashMap<String, Double> sortedReviewMap = new HashMap();
 			String recommendResponseJson = "";
 			/*
-			 * Get call to search API by passing query as String Parse first
-			 * Item Id from JSON response
+			 * Get call to search API by passing query as String 
+			 * Parse first Item Id from JSON response
 			 */
 			String searchResponseJson = apiCalls.getSearchAPI(query);
 			String productID = userRec.getItemID(searchResponseJson);
@@ -42,13 +42,15 @@ public class UserRecommendationsMain {
 				recommendResponseJson = APICalls.getProductRecommendationAPI(productID);
 			}
 			/*
-			 * Build Unsorted review map <ItemID,OverallAverageRating> Sort the
-			 * Map using Values
+			 * Get call to Reviews API for every recommended product.
+			 * Build Unsorted review map <ItemID,OverallAverageRating> 
+			 * Sort the resulting Map by Values.
+			 * print the Map .
 			 */
 			try {
 				unsortedReviewMap = userRec.createReviewMap(recommendResponseJson);
 				sortedReviewMap = userRec.sortByComparator(unsortedReviewMap);
-				userRec.printMap(sortedReviewMap); // Print HashMap
+				userRec.printMap(sortedReviewMap); 
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
