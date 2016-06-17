@@ -29,7 +29,7 @@ How to run the application model:
 Technologies Used:
 Java,Maven,Junit,Github,Jersey client,Eclipse
 
-If time permits How we can ehance this:
+If time permits How we can enhance this:
 1.We can develop a builder pattern mechanism using pojos to parse the Json response retrieved from the Search API. 
 2.We can develop User Interface for the application
 3.We can develop effective review rating mechanism that uses Semantic review analysis for rankingrecommended product instead of overall average review ranking which was available as property for the review. 
